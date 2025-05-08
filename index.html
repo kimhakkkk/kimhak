@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimhak | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .fade-up {
+      animation: fadeUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .progress-bar {
+      height: 20px;
+      background: linear-gradient(to right, red, yellow, green);
+      width: 0;
+      border-radius: 9999px;
+      transition: width 2s ease;
+    }
+    .smash-icon {
+      width: 100px;
+      animation: talk 1s ease-in-out infinite alternate;
+    }
+    .speech-bubble {
+      position: relative;
+      background: #f3f4f6;
+      border-radius: .4em;
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: #f3f4f6;
+      border-bottom: 0;
+      margin-left: -15px;
+      margin-bottom: -15px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-center p-10">
+    <div class="fade-up">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hi, I'm Kimhak 👋</h1>
+      <p class="text-xl md:text-2xl">G11 Student | Beltei International School</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-20 bg-white">
+    <div class="max-w-4xl mx-auto fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-indigo-600">About Me</h2>
+      <p class="text-lg leading-relaxed">I'm currently a Grade 11 student at <strong>Beltei International School</strong>. I actively participate in competitions and events, especially the <strong>Beltei Defensive Debate</strong>. I'm also joining an exciting <strong>STEM project (coming soon!)</strong>. Passionate about innovation, knowledge, and leveling up every day.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6 md:px-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-purple-600">Skills</h2>
+      <div class="space-y-6">
+        <div>
+          <p class="text-lg font-semibold">Mathematics - Advanced 💡</p>
+          <div class="progress-bar" data-width="100%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Chemistry - Intermediate 🧪</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Biology - Intermediate 🌱</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Geography - Average 🌍</p>
+          <div class="progress-bar" data-width="50%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">History - Intermediate 📜</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Literature - Intermediate 📖</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Moral - Intermediate 💭</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Python - Intermediate 🐍</p>
+          <div class="progress-bar" data-width="70%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports & Hobby -->
+  <section id="sports" class="py-16 px-6 md:px-20 bg-white">
+    <div class="max-w-4xl mx-auto fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-indigo-500">Sports & Hobby</h2>
+      <p class="text-lg">I enjoy playing <strong>Badminton</strong>. Currently using the <strong>Vension Titan 8</strong> racket (coming soon upgrade!).</p>
+      <div class="flex items-center space-x-4 mt-6">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt="Boy Talking" class="smash-icon">
+        <div class="speech-bubble">Vai sey ot?</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Love Life (just for fun!) -->
+  <section id="fun" class="py-16 px-6 md:px-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-pink-500">💘 My Current Status</h2>
+      <p class="text-lg">Happily taken by <strong>Khov Channa</strong> :&gt;</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 bg-indigo-600 text-white">
+    <p>Made with ❤️ by Kimhak | &copy; 2025</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const sections = document.querySelectorAll('.fade-up');
+    const skillBars = document.querySelectorAll('.progress-bar');
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeUp');
+          if (entry.target.id === 'skills' || entry.target.closest('#skills')) {
+            skillBars.forEach(bar => {
+              const targetWidth = bar.getAttribute('data-width');
+              bar.style.width = targetWidth;
+            });
+          }
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
